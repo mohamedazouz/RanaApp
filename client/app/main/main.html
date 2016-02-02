@@ -1,9 +1,13 @@
-<navbar></navbar>
-
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Hello, Rana</h1>
-    <p class="lead">This is Rana App!</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+    <div class='note'>
+    	<span class='note-title'>{{main.currentNote.title}}</span>
+    	<span class='note-desc'>{{main.currentNote.description}}</span>
+    </div>
+    <div class='note-actions'>
+    	<a class='prev-btn' ng-click='main.previousNote()'>Previous</a>
+    	<a class='next-btn' ng-click='main.nextNote()'>Next</a>
+    </div>
   </div>
 </header>

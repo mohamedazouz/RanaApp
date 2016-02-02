@@ -25,3 +25,34 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+
+.note {
+  padding-bottom: 90px;
+  padding-top: 40px;
+  .note-title {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .note-desc {
+    display: block;
+    font-size: 16px;
+    white-space: pre-line;
+  }
+}
+
+.note-actions {
+  text-decoration: none;
+  .next-btn {
+    cursor: pointer;
+    color: #FFF;
+    padding-left: 100px;
+  }
+  .prev-btn {
+    cursor: pointer;
+    color: #FFF;
+    padding-right: 100px;
+  }
+}
