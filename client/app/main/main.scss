@@ -1,24 +1,5 @@
-.thing-form {
-  margin: 20px 0;
-}
 
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
-}
-
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+body {
   background: #4393B9;
 }
 
@@ -26,33 +7,6 @@
   margin-left: 15px;
 }
 
-
-.note {
-  padding-bottom: 90px;
-  padding-top: 40px;
-  .note-title {
-    display: block;
-    font-weight: bold;
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
-  .note-desc {
-    display: block;
-    font-size: 16px;
-    white-space: pre-line;
-  }
-}
-
-.note-actions {
-  text-decoration: none;
-  .next-btn {
-    cursor: pointer;
-    color: #FFF;
-    padding-left: 100px;
-  }
-  .prev-btn {
-    cursor: pointer;
-    color: #FFF;
-    padding-right: 100px;
-  }
+.desc {
+  white-space: pre-line;
 }

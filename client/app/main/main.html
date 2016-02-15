@@ -1,13 +1,18 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Hello, Rana</h1>
-    <div class='note'>
-    	<span class='note-title'>{{main.currentNote.title}}</span>
-    	<span class='note-desc'>{{main.currentNote.description}}</span>
-    </div>
-    <div class='note-actions'>
-    	<a class='prev-btn' ng-click='main.previousNote()'>Previous</a>
-    	<a class='next-btn' ng-click='main.nextNote()'>Next</a>
-    </div>
+    <timeline>
+        <timeline-event ng-repeat="note in main.notes" side="{{$index % 2 ? 'left' : 'right'}}">
+          <timeline-badge class="info">
+            <i class="glyphicon glyphicon-check"></i>
+          </timeline-badge>
+          <timeline-panel class="glyphicon-check">
+            <timeline-heading>
+              <h4>{{note.title}}</h4>
+            </timeline-heading>
+            <p class='desc'>{{note.description}}</p>
+          </timeline-panel>
+        </timeline-event>
+    </timeline>
   </div>
 </header>

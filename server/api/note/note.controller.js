@@ -21,7 +21,7 @@ function responseWithResult(res, statusCode) {
 
 
 export function index(req, res) {
-  Thing.findAsync()
+  Thing.find().sort({'time': -1})
     .then(responseWithResult(res))
     .catch(handleError(res));
 }

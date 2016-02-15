@@ -6,7 +6,8 @@ angular.module('ranaAppApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'angular-timeline'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
