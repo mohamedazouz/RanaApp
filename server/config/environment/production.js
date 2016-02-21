@@ -19,6 +19,7 @@ module.exports = {
           process.env.MONGOHQ_URL ||
           process.env.OPENSHIFT_MONGODB_DB_URL +
           process.env.OPENSHIFT_APP_NAME ||
-          'mongodb://localhost/ranaapp'
+           //'mongodb://localhost/ranaapp'
+'mongodb://azouz:m7117340@ds013848.mongolab.com:13848/ranaapp'
   }
 };
