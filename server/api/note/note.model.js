@@ -18,6 +18,12 @@ var ThingSchema = new mongoose.Schema({
   author: {
   	type: String,
   	default: 'Mohamed'
+  },
+  place: {
+    type: String
+  },
+  people: {
+    type: String
   }
 });
 

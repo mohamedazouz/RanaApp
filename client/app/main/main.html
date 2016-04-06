@@ -1,6 +1,7 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Hello, Rana</h1>
+    <a ui-sref="compose" class='glyphicon glyphicon-edit compose-new'>Add New</a>
     <timeline>
         <timeline-event ng-repeat="note in main.notes" side="{{$index % 2 ? 'left' : 'right'}}">
           <timeline-badge class="info">
@@ -8,9 +9,24 @@
           </timeline-badge>
           <timeline-panel class="glyphicon-check">
             <timeline-heading>
+              <a ui-sref="compose({ id: note._id })" class='glyphicon glyphicon-edit edit'>Edit</a>
               <h4>{{note.title}}</h4>
             </timeline-heading>
-            <p class='desc'>{{note.description}}</p>
+             <fieldset class="form-group">
+              <label>Place:</label>
+              <span>{{note.place}}</span>
+            </fieldset>
+            <fieldset class="form-group">
+              <label>Date:</label>
+              <span>{{note.time | date:'EEEE, MMMM dd, yyyy'}}</span>
+            </fieldset>
+            <fieldset class="form-group">
+              <label>People:</label>
+              <span>{{note.people}}</span>
+            </fieldset>
+            <fieldset class="form-group">
+              <span class='desc'>{{note.description}}</span>
+            </fieldset>
           </timeline-panel>
         </timeline-event>
     </timeline>

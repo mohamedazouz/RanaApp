@@ -1,6 +1,29 @@
-Add Note
-<div class='add-note'>
-	<textarea ng-model="main.newNote.title"></textarea>
-	<textarea ng-model="main.newNote.description"></textarea>
-	<button ng-click='main.createNote()'>Add New one</button>
-</div>
+<header class="hero-unit" id="banner">
+	<div class="container compose-container">
+		<span class='header'>Add Memory</span>
+		<div class='add-note'>
+		  <fieldset class="form-group">
+		    <label>Memory Title</label>
+		    <input type="name"  ng-model="compose.newNote.title" class="form-control" placeholder="Title">
+		  </fieldset>
+		  <fieldset class="form-group">
+		    <label>Place</label>
+		    <input type="place"  ng-model="compose.newNote.place" class="form-control" placeholder="Place">
+		  </fieldset>
+		  <fieldset class="form-group">
+		    <label>Date</label>
+		    <input type="date"  ng-model="compose.newNote.time" class="form-control">
+		  </fieldset>
+		  <fieldset class="form-group">
+		    <label>People</label>
+		    <input type="name"  ng-model="compose.newNote.people" class="form-control" placeholder="People">
+		  </fieldset>
+		  <fieldset class="form-group">
+		    <label>Memory Description</label>
+		    <textarea class="form-control" rows="3" ng-model="compose.newNote.description"></textarea>
+		  </fieldset>
+		  <button type="submit" ng-disabled="compose.submitInProgress" ng-click='compose.saveNote()' class="btn btn-primary">{{compose.update?'Upate':'Add'}} Memory</button>
+		  <button type="submit" ng-disabled="compose.submitInProgress" ng-click='compose.goHomepage()' class="btn">Cancel</button>
+		</div>
+	</div>
+</header>

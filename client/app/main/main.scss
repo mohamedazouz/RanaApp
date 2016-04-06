@@ -1,12 +1,20 @@
 
-body {
-  background: #4393B9;
-}
-
 .navbar-text {
   margin-left: 15px;
 }
 
 .desc {
   white-space: pre-line;
+  display: block;
+  text-align: center;
+}
+
+.edit {
+	float: right;
+	cursor: pointer;
+}
+
+.compose-new {
+	padding-bottom: 20px;
+    padding-left: 15px;
 }
