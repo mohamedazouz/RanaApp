@@ -20,7 +20,7 @@
 		  </fieldset>
 		  <fieldset class="form-group">
 		    <label>Memory Description</label>
-		    <textarea class="form-control" rows="3" ng-model="compose.newNote.description"></textarea>
+		    <textarea class="form-control stop-resize" row="3" ng-model="compose.newNote.description"></textarea>
 		  </fieldset>
 		  <button type="submit" ng-disabled="compose.submitInProgress" ng-click='compose.saveNote()' class="btn btn-primary">{{compose.update?'Upate':'Add'}} Memory</button>
 		  <button type="submit" ng-disabled="compose.submitInProgress" ng-click='compose.goHomepage()' class="btn">Cancel</button>
