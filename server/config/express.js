@@ -65,6 +65,7 @@ export default function(app) {
   }
 
   app.set('appPath', path.join(config.root, 'client'));
+  app.use(require(path.join(config.root, 'server', 'components', 'basic-auth')));
 
   if ('production' === env) {
     app.use(favicon(path.join(config.root, 'client', 'favicon.ico')));
